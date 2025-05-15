@@ -2,7 +2,7 @@
             background-color: #00493D;
             color: white;
             padding: 40px 20px;
-            font-family: 'Helvetica Neue', sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
           }
       
@@ -27,7 +27,7 @@
           }
       
           .footer-column a {
-            color: white !important;
+            color: white;
             text-decoration: underline;
             display: inline-block;
             margin-bottom: 5px;
@@ -36,6 +36,7 @@
           .footer-column p {
             margin: 0 0 10px;
             color: white;
+            font-size: 1.2em;
           }
       
           .footer-bottom {
@@ -46,6 +47,7 @@
       
           .footer-bottom p {
             color: white;
+            font-size: 1.2em;
           }
       
           .footer-bottom a {
