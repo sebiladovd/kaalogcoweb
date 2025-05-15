@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="galleri.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+<body>
+      <!-- Navbar -->
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo2.png" alt="Kål & Co logo" />
+    </div>
+    
+    <!-- Hamburger menu til mobil -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="forside.html">Forside</a></li>
+      <li><a href="omos.html">Om os</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+    </ul>
+
+    <!-- Call-to-action knap -->
+    <a href="https://kaalogco.mealo.dk/" class="button">Bestil online</a>
+  </nav>
+    <div class="gallery">
+        <!-- Udskift disse src med dine egne billeder -->
+        <div class="gallery-item"><img src="images/galleri1.jpg" alt="Billede 1"></div>
+        <div class="gallery-item"><img src="images/galleri2.jpg" alt="Billede 2"></div>
+        <div class="gallery-item"><img src="images/galleri3.jpg" alt="Billede 3"></div>
+        <div class="gallery-item"><img src="images/galleri4.jpg" alt="Billede 4"></div>
+        <div class="gallery-item"><img src="images/galleri5.jpg" alt="Billede 5"></div>
+        <div class="gallery-item"><img src="images/galleri6.jpg" alt="Billede 6"></div>
+        <div class="gallery-item"><img src="images/galleri7.jpg" alt="Billede 7"></div>
+        <div class="gallery-item"><img src="images/galleri8.png" alt="Billede 8"></div>
+        <div class="gallery-item"><img src="images/galleri9.jpg" alt="Billede 9"></div>
+        <div class="gallery-item"><img src="images/galleri10.png" alt="Billede 10"></div>
+        <div class="gallery-item"><img src="images/galleri11.png" alt="Billede 11"></div>
+        <div class="gallery-item"><img src="images/galleri12.png" alt="Billede 12"></div>
+        <div class="gallery-item"><img src="images/galleri13.png" alt="Billede 13"></div>
+        <div class="gallery-item"><img src="images/galleri14.png" alt="Billede 14"></div>
+        <div class="gallery-item"><img src="images/galleri15.png" alt="Billede 15"></div>
+        <div class="gallery-item"><img src="images/galleri16.png" alt="Billede 16"></div>
+        <div class="gallery-item"><img src="images/galleri17.png" alt="Billede 17"></div>
+        <div class="gallery-item"><img src="images/galleri18.png" alt="Billede 18"></div>
+      </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Åbningstider -->
+      <div class="footer-column">
+        <h3>Åbningstider</h3>
+        <p>Mandag – Lørdag<br>11:00 - 19:00</p>
+        <p>Søndag Lukket</p>
+      </div>
+  
+      <!-- Sociale medier -->
+      <div class="footer-column">
+        <h3>Sociale medier</h3>
+        <a href="#">Instagram</a><br>
+        <a href="#">Facebook</a>
+      </div>
+  
+      <!-- Vores venner -->
+      <div class="footer-column">
+        <h3>Vores venner</h3>
+        <a href="#">Circus Gin</a><br>
+        <a href="#">Vinbaren</a><br>
+        <a href="#">The Mokka Cafe</a><br>
+        <a href="#">Johansens</a><br>
+        <a href="#">Marinaen</a><br>
+        <a href="#">Superhero</a><br>
+        <a href="#">Street food festival</a><br>
+        <a href="#">Orangeriet</a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>
+        <a href="tel:31211515">Tlf. 31 21 15 15</a> · 
+        <a href="mailto:kontakt@kaalkolding.dk">kontakt@kaalkolding.dk</a> · 
+        Slotsgade 13, 6000 Kolding · 
+        <a href="https://kaalkolding.dk">kaalkolding.dk</a>
+      </p>
+    </div>
+  </footer>
+  <!-- JavaScript til hamburger funktion -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

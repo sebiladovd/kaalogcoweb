@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kål & Co - Forside</title>
+    <link rel="stylesheet" href="forside.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+
+     <!--FONTS!-->
+    <link href="https://fonts.cdnfonts.com/css/erica-one" rel="stylesheet">
+     <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">  
+     <link href="https://fonts.cdnfonts.com/css/effra-trial" rel="stylesheet">
+                    
+    
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo2.png" alt="Kål & Co logo" />
+    </div>
+    
+    <!-- Hamburger menu til mobil -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="forside.html">Forside</a></li>
+      <li><a href="omos.html">Om os</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+    </ul>
+
+    <!-- Call-to-action knap -->
+    <a href="https://kaalogco.mealo.dk/" class="button">Bestil online</a>
+  </nav>
+
+  <!-- Nye bowls -->
+  <section class="nyebowls">
+    <div class="nyebowls-content">
+      <h1 class="hvidt">PRØV VORES...</h1>
+      <h1>NYE BOWLS!</h1>
+      <a href="https://kaalogco.mealo.dk/"><button>BESTIL HER!</button></a>
+    </div>
+  </section>
+
+  <!-- Eksempler på deres mad -->
+  <section class="mad">
+    <div class="mad-box left-img">
+      <img src="images/Sweet potato.png" alt="Poké Bowl">
+      <div class="mad-text">
+        <h2 class="right">FRISKT! FRISKT! FRISKTTT!</h2>
+        <p class="right">hos <i><b>KÅL&CO</b></i> Kan det aldrig være for friskt! vi går derfor meget højt op i, at alle vores retter samt råvarerne
+          altid er super, duper friskt!<br><br><b> ...hver - evig - eneste - gang!</b></p>
+      </div>
+    </div>
+    <div class="mad-box right-img">
+      <div class="mad-text">
+        <h2 class="left">Råvarer i... TOP-kval!</h2>
+        <p class="left"> Hos <i><b>KÅL&CO</b></i> kan det aldrig være for friskt! vi går derfor meget højt op i, at alle vores
+          retter samt råvarerne altid er super, duper friskt!<br><br><b> ...hver - evig - eneste - gang!</b></p></p>
+      </div>
+      <img src="images/Billede af kål.png" alt="Favoritret">
+    </div>
+   <a href="menu.html"><button class="mad-button">CHECK VORES MENU UD!</button></a>
+  </section>
+
+  <!-- Lidt om dem -->
+  <section class="about">
+    <h2>Baseret i Kolding</h2>
+    <p class="smalltitle">– Passion for verden!</p>
+    <p class="smalltitle2">Læs om vores historie, værdier og kærlighed til gode råvarer.</p>
+    <img src="images/Photoshop til kålogco.png" alt="Teamet foran restauranten" class="responsive-img">
+   <a href="galleri.html"><button class="gallery-button">SE VORES GALLERI HER!</button></a> 
+  </section>
+
+  <!-- Eksempel på fremtidige events -->
+  <section class="events">
+    <h2><strong> Hos os er der altid noget på færde!</strong></h2>
+
+    <p> Om det enten er i forbindelse med vores super dejlige dage<br>
+      i restauranten, ude for at etablere nye forbindelser eller<br>
+      ombord på vores foodtrcuk (fang os til dit næste event!)<br><br>
+       Så er vi altid på farten med et smil om munden!</p>
+    <img src="images/Food stand.png" alt="Food truck" class="responsive-img">
+    <div class="event-buttons">
+      <button>SE EVENTS</button>
+      <button>BOOK OS!</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Åbningstider -->
+      <div class="footer-column">
+        <h3>Åbningstider</h3>
+        <p>Mandag – Lørdag<br>11:00 - 19:00</p>
+        <p>Søndag Lukket</p>
+      </div>
+  
+      <!-- Sociale medier -->
+      <div class="footer-column">
+        <h3>Sociale medier</h3>
+        <a href="#">Instagram</a><br>
+        <a href="#">Facebook</a>
+      </div>
+  
+      <!-- Vores venner -->
+      <div class="footer-column">
+        <h3>Vores venner</h3>
+        <a href="#">Circus Gin</a><br>
+        <a href="#">Vinbaren</a><br>
+        <a href="#">The Mokka Cafe</a><br>
+        <a href="#">Johansens</a><br>
+        <a href="#">Marinaen</a><br>
+        <a href="#">Superhero</a><br>
+        <a href="#">Street food festival</a><br>
+        <a href="#">Orangeriet</a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>
+        <a href="tel:31211515">Tlf. 31 21 15 15</a> · 
+        <a href="mailto:kontakt@kaalkolding.dk">kontakt@kaalkolding.dk</a> · 
+        Slotsgade 13, 6000 Kolding · 
+        <a href="https://kaalkolding.dk">kaalkolding.dk</a>
+      </p>
+    </div>
+  </footer>
+  <!-- JavaScript til hamburger funktion -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
