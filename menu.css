@@ -3,7 +3,7 @@
  @import url('https://fonts.cdnfonts.com/css/battambang-2');
                 
 
-  /* Reset all margins and paddings */
+
   * {
       margin: 0;
       padding: 0;
@@ -11,7 +11,7 @@
   }
 
   html {
-      background: #F7F4EA; /* Set background on html element too */
+      background: #F7F4EA; 
   }
 
   body {
@@ -22,8 +22,8 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      width: 100%; /* Ensure body takes full width */
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      width: 100%; 
+      overflow-x: hidden; 
   }
 
   .main-content {
@@ -32,7 +32,7 @@
       flex: 1;
       width: 100%;
       padding: 20px 0;
-      background: #F7F4EA; /* Ensure this has background too */
+      background: #F7F4EA; 
   }
 
   .container {
@@ -40,17 +40,17 @@
       max-width: 1440px;
       position: relative;
       background: #F7F4EA;
-      overflow: visible; /* Changed from hidden to prevent cutting off content */
+      overflow: visible; 
       padding: 0 20px;
       box-sizing: border-box;
   }
 
-  /* Make sure navbar and footer extend full width */
+ 
   .navbar, .footer {
       width: 100%;
   }
 
-  /* Ensure sections have the right background */
+
   .menu-section {
       width: 100%;
       max-width: 1092px;
