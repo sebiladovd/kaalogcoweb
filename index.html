@@ -99,8 +99,10 @@
     </div>
   </section>
 
-
+ 
   <footer class="footer">
+    <button id="scrollToTop" class="scroll-top-btn">Til toppen</button>
+
     <div class="footer-container">
   
       <div class="footer-column">
@@ -149,6 +151,20 @@
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("open");
     });
+
+
+// Viser knappen, når der scrolles ned
+  const scrollBtn = document.getElementById('scrollToTop');
+
+
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
   </script>
 </body>
 </html>

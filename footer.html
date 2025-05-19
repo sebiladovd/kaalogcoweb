@@ -6,8 +6,12 @@
     <title>Footer</title>
     <link rel="stylesheet" href="footer.css">
 
+    <link href="https://fonts.cdnfonts.com/css/effra-trial" rel="stylesheet">
+
 </head>
 <body>
+
+  <button id="scrollToTop" class="scroll-top-btn">Til toppen</button>
     <footer class="footer">
         <div class="footer-container">
        
@@ -47,5 +51,23 @@
           </p>
         </div>
       </footer>
+
+
+      <script> 
+
+// Viser knappen, når der scrolles ned
+const scrollBtn = document.getElementById('scrollToTop');
+
+
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+      </script>
 </body>
 </html>
