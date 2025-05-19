@@ -38,7 +38,7 @@
     transform: scale(1.02);
   }
 
-  /* Varierede højder */
+/* Laver forskellige størrelse til billederne */
   .gallery-item:nth-child(3n+1) {
     grid-row: span 2;
   }
